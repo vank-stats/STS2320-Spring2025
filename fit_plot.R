@@ -16,5 +16,5 @@ fit_plot <- function(model, level = 0.95) {
     geom_line(aes(y = .upper), linetype = 2) +
     theme_bw() +
     labs(x = axes[2], y = axes[1],
-         title = "Confidence and Prediction Intervals")
+         title = paste0(100*level, "% Confidence and Prediction Intervals"))
 }
